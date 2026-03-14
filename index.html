@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shyam Kumar | Staff Software Engineer | Data Platforms | GenAI</title>
+    <meta
+      name="description"
+      content="Shyam Kumar is a Staff Software Engineer in Bengaluru specializing in data platforms, observability, cloud infrastructure, Apache Iceberg, Spark, Trino, and GenAI-powered automation."
+    />
+    <meta
+      name="keywords"
+      content="Shyam Kumar, Staff Software Engineer, Software Architect, Data Engineer, Data Platforms, Observability, Apache Iceberg, Apache Spark, Trino, GenAI, Bengaluru, Intuit, Salesforce, SAP"
+    />
+    <meta name="author" content="Shyam Kumar" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#0a0f1f" />
+    <meta name="application-name" content="Shyam Kumar Portfolio" />
+    <meta name="apple-mobile-web-app-title" content="Shyam Kumar" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Shyam Kumar | Staff Software Engineer | Data Platforms | GenAI" />
+    <meta
+      property="og:description"
+      content="Portfolio of Shyam Kumar featuring experience across Intuit, Salesforce, SAP, and Accenture with a focus on scalable data platforms, observability, and AI-powered engineering."
+    />
+    <meta property="og:url" content="https://shyamkumarc.github.io/" />
+    <meta property="og:site_name" content="Shyam Kumar Portfolio" />
+    <meta property="og:image" content="https://https://shyamkumarc.github.io/profile-photo.jpg" />
+    <meta property="og:image:alt" content="Portrait of Shyam Kumar" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Shyam Kumar | Staff Software Engineer | Data Platforms | GenAI" />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Shyam Kumar highlighting data platforms, cloud infrastructure, observability, and applied AI engineering."
+    />
+    <meta name="twitter:image" content="https://shyamkumarc/profile-photo.jpg" />
+    <link rel="canonical" href="https://shyamkumarc.github.io/" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Shyam Kumar",
+        "jobTitle": "Staff Software Engineer",
+        "description": "Staff Software Engineer specializing in data platforms, observability, cloud infrastructure, Apache Iceberg, Spark, Trino, and GenAI systems.",
+        "email": "mailto:scrapshyam@gmail.com",
+        "telephone": "+91 99013 01536",
+        "url": "https://shyamkumarc.github.io/",
+        "image": "https://shyamkumarc.github.io/profile-photo.jpg",
+        "sameAs": [
+          "https://www.linkedin.com/in/shyamkumarc"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bengaluru",
+          "addressRegion": "Karnataka",
+          "addressCountry": "IN"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Intuit"
+        },
+        "alumniOf": [
+          {
+            "@type": "Organization",
+            "name": "Salesforce"
+          },
+          {
+            "@type": "Organization",
+            "name": "SAP"
+          },
+          {
+            "@type": "Organization",
+            "name": "Accenture"
+          }
+        ],
+        "knowsAbout": [
+          "Data Platforms",
+          "Observability",
+          "Apache Iceberg",
+          "Apache Spark",
+          "Trino",
+          "GenAI",
+          "LangChain",
+          "Distributed Systems",
+          "Cloud Infrastructure"
+        ]
+      }
+    
+      const toggle = document.getElementById('themeToggle');
+      const savedTheme = localStorage.getItem('theme');
+
+      if (savedTheme === 'dark') {
+        document.body.classList.add('dark');
+      }
+
+      toggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        const mode = document.body.classList.contains('dark') ? 'dark' : 'light';
+        localStorage.setItem('theme', mode);
+      });
+    </script>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --bg-soft: rgba(0,0,0,0.03);
+        --card: rgba(255,255,255,0.9);
+        --card-strong: rgba(255,255,255,0.95);
+        --text: #0f172a;
+        --muted: #475569;
+        --line: rgba(0,0,0,0.08);
+        --accent: #4f46e5;
+        --accent-2: #06b6d4;
+        --accent-3: #9333ea;
+        --shadow: 0 20px 50px rgba(0,0,0,0.08);
+        --radius: 24px;
+        --max: 1180px;
+      }
+
+      body.dark {
+        --bg: #0a0f1f;
+        --bg-soft: rgba(255,255,255,0.04);
+        --card: rgba(255,255,255,0.06);
+        --card-strong: rgba(255,255,255,0.09);
+        --text: #eef2ff;
+        --muted: #a7b0c9;
+        --line: rgba(255,255,255,0.09);
+        --shadow: 0 20px 60px rgba(0,0,0,0.35);
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        overflow-x: hidden;
+      }
+
+      a { color: inherit; text-decoration: none; }
+      img { max-width: 100%; display: block; }
+
+      .noise {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.05;
+        background-image:
+          linear-gradient(rgba(255,255,255,0.09) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px);
+        background-size: 42px 42px;
+        mask-image: radial-gradient(circle at center, black 35%, transparent 85%);
+      }
+
+      .orb {
+        position: fixed;
+        border-radius: 999px;
+        filter: blur(40px);
+        opacity: 0.22;
+        pointer-events: none;
+        z-index: 0;
+      }
+      .orb.one {
+        width: 280px; height: 280px; top: 80px; left: -40px;
+        background: var(--accent);
+        animation: float 14s ease-in-out infinite;
+      }
+      .orb.two {
+        width: 220px; height: 220px; top: 38%; right: -60px;
+        background: var(--accent-2);
+        animation: float 18s ease-in-out infinite reverse;
+      }
+      .orb.three {
+        width: 180px; height: 180px; bottom: 8%; left: 12%;
+        background: var(--accent-3);
+        animation: float 12s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%, 100% { transform: translateY(0) translateX(0) scale(1); }
+        50% { transform: translateY(-20px) translateX(18px) scale(1.06); }
+      }
+
+      .container {
+        width: min(calc(100% - 32px), var(--max));
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+
+      .nav {
+        position: sticky;
+        top: 18px;
+        z-index: 50;
+        padding-top: 18px;
+      }
+
+      .nav-shell {
+        background: var(--card);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 14px 18px;
+        border: 1px solid var(--line);
+        background: rgba(10, 15, 31, 0.62);
+        backdrop-filter: blur(18px);
+        border-radius: 999px;
+        box-shadow: var(--shadow);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .brand-mark {
+        width: 40px;
+        height: 40px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, var(--accent), var(--accent-3));
+        color: white;
+        box-shadow: 0 10px 30px rgba(124, 156, 255, 0.35);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+
+      .nav-links a {
+        font-size: 0.95rem;
+        color: var(--muted);
+        transition: color 0.25s ease, transform 0.25s ease;
+      }
+      .nav-links a:hover { color: var(--text); transform: translateY(-1px); }
+
+      .hero {
+        min-height: 88vh;
+        display: grid;
+        align-items: center;
+        padding: 72px 0 32px;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 28px;
+        align-items: stretch;
+      }
+
+      .hero-card,
+      .panel,
+      .timeline-item,
+      .stat,
+      .skill-card,
+      .cert-card,
+      .contact-card {
+        background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+
+      .hero-card {
+        padding: 34px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-card::before {
+        content: "";
+        position: absolute;
+        inset: auto -40px -60px auto;
+        width: 220px;
+        height: 220px;
+        background: radial-gradient(circle, rgba(124,156,255,0.35), transparent 65%);
+        border-radius: 999px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(255,255,255,0.12);
+        background: rgba(255,255,255,0.05);
+        color: #d9e2ff;
+        font-size: 0.88rem;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.8rem, 6vw, 5.4rem);
+        line-height: 0.94;
+        letter-spacing: -0.06em;
+      }
+
+      .gradient-text {
+        background: linear-gradient(135deg, #ffffff 0%, #dbe6ff 35%, #8ce7ff 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .hero-subtitle {
+        margin: 20px 0 0;
+        font-size: clamp(1.1rem, 2vw, 1.35rem);
+        line-height: 1.7;
+        color: var(--muted);
+        max-width: 760px;
+      }
+
+      .hero-actions {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-top: 28px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        min-height: 48px;
+        padding: 0 18px;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+      }
+      .button:hover { transform: translateY(-2px); }
+      .button.primary {
+        background: linear-gradient(135deg, var(--accent), var(--accent-3));
+        color: white;
+        box-shadow: 0 14px 30px rgba(124, 156, 255, 0.28);
+      }
+      .button.secondary {
+        border-color: rgba(255,255,255,0.12);
+        background: rgba(255,255,255,0.04);
+      }
+
+      .hero-side {
+        display: grid;
+        gap: 18px;
+      }
+
+      .panel { padding: 24px; }
+
+      .profile-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .avatar {
+        width: 74px;
+        height: 74px;
+        border-radius: 22px;
+        display: grid;
+        place-items: center;
+        font-size: 1.4rem;
+        font-weight: 800;
+        background: linear-gradient(135deg, rgba(124, 156, 255, 0.25), rgba(103, 232, 249, 0.15));
+        border: 1px solid rgba(255,255,255,0.12);
+      }
+
+      .profile-photo-wrap {
+        position: relative;
+        min-height: 100%;
+        overflow: hidden;
+      }
+
+      .profile-photo-card {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 18px;
+      }
+
+      .profile-photo-frame {
+        position: relative;
+        border-radius: 28px;
+        overflow: hidden;
+        border: 1px solid rgba(255,255,255,0.12);
+        background:
+          radial-gradient(circle at top, rgba(124,156,255,0.28), transparent 40%),
+          linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+        aspect-ratio: 4 / 5;
+      }
+
+      .profile-photo-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .photo-badge {
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 14px;
+        border-radius: 18px;
+        border: 1px solid rgba(255,255,255,0.12);
+        background: rgba(7, 16, 28, 0.65);
+        backdrop-filter: blur(14px);
+      }
+
+      .photo-badge strong {
+        display: block;
+        font-size: 0.98rem;
+      }
+
+      .photo-badge span {
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+
+      .availability {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #d8ffe4;
+        background: rgba(16, 185, 129, 0.12);
+        border: 1px solid rgba(16, 185, 129, 0.25);
+        padding: 8px 12px;
+        border-radius: 999px;
+        font-size: 0.88rem;
+      }
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: #34d399;
+        box-shadow: 0 0 0 6px rgba(52, 211, 153, 0.12);
+      }
+
+      .quick-meta {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 18px;
+      }
+
+      .stat {
+        padding: 18px;
+        background: rgba(255,255,255,0.03);
+      }
+
+      .stat strong {
+        display: block;
+        font-size: 1.55rem;
+        letter-spacing: -0.04em;
+      }
+      .stat span {
+        display: block;
+        margin-top: 6px;
+        color: var(--muted);
+        line-height: 1.5;
+        font-size: 0.92rem;
+      }
+
+      section {
+        padding: 36px 0;
+      }
+
+      .section-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 16px;
+        margin-bottom: 20px;
+      }
+      .section-head h2 {
+        margin: 0;
+        font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+        letter-spacing: -0.04em;
+      }
+      .section-head p {
+        margin: 10px 0 0;
+        color: var(--muted);
+        max-width: 720px;
+        line-height: 1.7;
+      }
+
+      .highlight-grid,
+      .skills-grid,
+      .cert-grid,
+      .contact-grid,
+      .experience-list {
+        display: grid;
+        gap: 18px;
+      }
+
+      .highlight-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .skill-groups {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .skill-card,
+      .cert-card,
+      .contact-card,
+      .timeline-item {
+        padding: 22px;
+      }
+
+      .label {
+        color: var(--accent-2);
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        font-size: 0.76rem;
+        margin-bottom: 10px;
+      }
+
+      .skill-card h3,
+      .cert-card h3,
+      .timeline-item h3,
+      .contact-card h3 {
+        margin: 0 0 12px;
+        font-size: 1.08rem;
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .chip {
+        padding: 9px 12px;
+        border-radius: 999px;
+        background: rgba(255,255,255,0.06);
+        border: 1px solid rgba(255,255,255,0.08);
+        color: #dbe4ff;
+        font-size: 0.9rem;
+      }
+
+      .experience-list {
+        position: relative;
+      }
+
+      .timeline-item {
+        position: relative;
+        padding-left: 92px;
+        overflow: hidden;
+      }
+
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 42px;
+        width: 1px;
+        background: linear-gradient(180deg, rgba(124,156,255,0.9), rgba(255,255,255,0.06));
+      }
+
+      .timeline-badge {
+        position: absolute;
+        top: 24px;
+        left: 16px;
+        width: 52px;
+        height: 52px;
+        border-radius: 18px;
+        display: grid;
+        place-items: center;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        color: white;
+        border: 1px solid rgba(255,255,255,0.16);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+      }
+
+      .badge-intuit { background: linear-gradient(135deg, #1f6fff, #6ea3ff); }
+      .badge-salesforce { background: linear-gradient(135deg, #00a1e0, #0070d2); }
+      .badge-sap { background: linear-gradient(135deg, #0faaff, #2554ff); }
+      .badge-accenture { background: linear-gradient(135deg, #6e2bff, #a259ff); }
+
+      .role-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 14px;
+        color: var(--muted);
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+      }
+
+      .timeline-item ul {
+        margin: 0;
+        padding-left: 18px;
+        color: #dae3ff;
+        line-height: 1.8;
+      }
+
+      .impact-strip {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .impact-card {
+        padding: 24px;
+        border-radius: var(--radius);
+        border: 1px solid var(--line);
+        background: linear-gradient(180deg, rgba(124,156,255,0.10), rgba(255,255,255,0.04));
+        box-shadow: var(--shadow);
+      }
+
+      .impact-card strong {
+        font-size: 2.2rem;
+        display: block;
+        margin-bottom: 8px;
+        letter-spacing: -0.05em;
+      }
+
+      .impact-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .cert-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .contact-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .contact-card p,
+      .cert-card p { color: var(--muted); line-height: 1.7; margin: 0; }
+
+      .footer {
+        padding: 36px 0 56px;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (max-width: 1024px) {
+        .hero-grid,
+        .skill-groups,
+        .highlight-grid,
+        .impact-strip,
+        .cert-grid,
+        .contact-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 820px) {
+        .nav-shell { border-radius: 26px; }
+        .nav-links { display: none; }
+        .hero-grid,
+        .skill-groups,
+        .highlight-grid,
+        .impact-strip,
+        .cert-grid,
+        .contact-grid,
+        .quick-meta {
+          grid-template-columns: 1fr;
+        }
+        .hero-card,
+        .panel,
+        .skill-card,
+        .cert-card,
+        .timeline-item,
+        .contact-card {
+          padding: 20px;
+        }
+        .timeline-item { padding-left: 80px; }
+        .timeline-item::before { left: 34px; }
+        .timeline-badge { left: 8px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="orb one"></div>
+    <div class="orb two"></div>
+    <div class="orb three"></div>
+
+    <div class="container nav">
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand-mark">SK</span>
+          <span>Shyam Kumar</span>
+        </a>
+        <div class="nav-links">
+          <button id="themeToggle" class="button secondary" style="min-height:36px;padding:0 14px;font-size:0.85rem;">Toggle theme</button>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <header class="hero container" id="top" itemscope itemtype="https://schema.org/Person">
+      <div class="hero-grid">
+        <div class="hero-card reveal">
+          <div class="eyebrow">Staff Software Engineer • Data Platforms • Observability • GenAI</div>
+          <h1><span class="gradient-text" itemprop="name">Shyam Kumar</span><br />builds intelligent platforms at scale.</h1>
+          <p class="hero-subtitle" itemprop="description">
+            Staff Software Engineer based in Bengaluru, focused on resilient data platforms,
+            observability engineering, cloud-native architecture, and GenAI-powered automation.
+            The portfolio highlights measurable impact across Intuit, Salesforce, SAP, and Accenture.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="mailto:scrapshyam@gmail.com" itemprop="email">Let’s Connect</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/shyamkumarc" target="_blank" rel="noreferrer" itemprop="sameAs">View LinkedIn</a>
+          </div>
+        </div>
+
+        <aside class="panel reveal profile-photo-wrap" aria-label="Profile photo">
+          <div class="profile-photo-card">
+            <div class="profile-photo-frame">
+              <img src="profile-photo.jpg" alt="Portrait photo of Shyam Kumar" itemprop="image" />
+              <div class="photo-badge">
+                <div>
+                  <strong>Shyam Kumar</strong>
+                  <span>Staff Software Engineer</span>
+                </div>
+                <div class="availability"><span class="dot"></span> Available for leadership conversations</div>
+              </div>
+            </div>
+            <div class="chips" aria-label="Employer highlights">
+              <span class="chip">Intuit</span>
+              <span class="chip">Salesforce</span>
+              <span class="chip">SAP</span>
+              <span class="chip">Accenture</span>
+            </div>
+          </div>
+        </aside>
+
+        <div class="hero-side">
+          <div class="panel reveal">
+            <div class="profile-top">
+              <div style="display:flex; gap:14px; align-items:center;">
+                <div class="avatar">SK</div>
+                <div>
+                  <h2 style="margin:0; font-size:1.4rem;">Shyam Kumar</h2>
+                  <p style="margin:6px 0 0; color:var(--muted);">Bengaluru, Karnataka, India</p>
+                </div>
+              </div>
+              <div class="availability"><span class="dot"></span> 15+ years</div>
+            </div>
+            <div class="quick-meta">
+              <div class="stat">
+                <strong>46%</strong>
+                <span>reduction in ingestion and query costs through alternative log storage architecture</span>
+              </div>
+              <div class="stat">
+                <strong>50%</strong>
+                <span>higher query throughput through Iceberg compaction and optimization workflows</span>
+              </div>
+              <div class="stat">
+                <strong>Petabyte</strong>
+                <span>scale observability platform engineering across modern data stacks</span>
+              </div>
+              <div class="stat">
+                <strong>Multi-cloud</strong>
+                <span>experience across Spark, Iceberg, Trino, Kubernetes, Spring Boot, and GenAI tools</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel reveal">
+            <div class="label">Core Focus</div>
+            <div class="chips">
+              <span class="chip">GenAI Systems</span>
+              <span class="chip">Apache Iceberg</span>
+              <span class="chip">Apache Spark</span>
+              <span class="chip">Observability</span>
+              <span class="chip">Distributed Systems</span>
+              <span class="chip">Customer Data Platforms</span>
+              <span class="chip">Cloud Infrastructure</span>
+              <span class="chip">LangChain / LangGraph</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container" aria-label="Portfolio content">
+      <section id="about">
+        <div class="section-head reveal">
+          <div>
+            <h2>About Shyam Kumar</h2>
+            <p>
+              A hands-on engineering leader with strong architectural depth across modern data stacks,
+              business-critical platforms, and AI-augmented workflows. My work consistently sits at the
+              intersection of scalability, operational excellence, cost optimization, and measurable product impact.
+            </p>
+          </div>
+        </div>
+        <div class="impact-strip">
+          <div class="impact-card reveal">
+            <strong>Data Platforms</strong>
+            <p>Designed high-volume ingestion, storage, and query systems for observability and customer data use cases.</p>
+          </div>
+          <div class="impact-card reveal">
+            <strong>AI + Automation</strong>
+            <p>Built GenAI migration and validation agents to modernize dashboards, alerts, and operational workflows.</p>
+          </div>
+          <div class="impact-card reveal">
+            <strong>Execution at Scale</strong>
+            <p>Led delivery across platform engineering, marketing activation, enterprise SAP systems, and full-stack products.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="section-head reveal">
+          <div>
+            <h2>Skills & architecture themes</h2>
+            <p>
+              The profile below emphasizes the capabilities most visible across the resume: scalable data platforms,
+              cloud-native system design, observability engineering, and GenAI-powered automation.
+            </p>
+          </div>
+        </div>
+        <div class="skill-groups">
+          <article class="skill-card reveal">
+            <div class="label">Data Engineering</div>
+            <h3>Modern lakehouse & streaming platforms</h3>
+            <div class="chips">
+              <span class="chip">Apache Iceberg</span>
+              <span class="chip">Apache Spark</span>
+              <span class="chip">Trino</span>
+              <span class="chip">Data Ingestion</span>
+              <span class="chip">Partition Strategy</span>
+              <span class="chip">Compaction</span>
+              <span class="chip">Query Optimization</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="label">Cloud & Platforms</div>
+            <h3>Production-grade system architecture</h3>
+            <div class="chips">
+              <span class="chip">Kubernetes</span>
+              <span class="chip">Spring Boot</span>
+              <span class="chip">Observability</span>
+              <span class="chip">Cost Optimization</span>
+              <span class="chip">Monitoring</span>
+              <span class="chip">Cluster Resilience</span>
+              <span class="chip">Distributed Systems</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="label">Applied AI</div>
+            <h3>LLM-assisted migration and validation</h3>
+            <div class="chips">
+              <span class="chip">OpenAI</span>
+              <span class="chip">Llama</span>
+              <span class="chip">LangChain</span>
+              <span class="chip">LangGraph</span>
+              <span class="chip">Migration Agents</span>
+              <span class="chip">Validation Agents</span>
+              <span class="chip">Autonomous Correction</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="section-head reveal">
+          <div>
+            <h2>Selected experience</h2>
+            <p>
+              A timeline built to foreground impact, scale, and technology decisions instead of just responsibilities.
+            </p>
+          </div>
+        </div>
+        <div class="experience-list">
+          <article class="timeline-item reveal">
+            <div class="timeline-badge badge-intuit">I</div>
+            <div class="label">Current</div>
+            <h3>Staff Software Engineer • Intuit</h3>
+            <div class="role-meta">
+              <span>August 2024 – Present</span>
+              <span>Bengaluru, India</span>
+            </div>
+            <ul>
+              <li>Built an alternate storage system for application logs on Intuit’s internal observability platform, handling petabyte-scale data.</li>
+              <li>Designed a Spark-based ingestion pipeline writing logs into Apache Iceberg with self-hosted Trino for performant querying.</li>
+              <li>Delivered a 46% reduction in ingestion and query costs and a 50% improvement in query throughput.</li>
+              <li>Created GenAI migration agents to move legacy Splunk dashboards and alerts to Grafana, plus validation agents that autonomously compare, detect, and correct discrepancies.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-badge badge-salesforce">SF</div>
+            <div class="label">Data Cloud</div>
+            <h3>Senior Member of Technical Staff • Salesforce</h3>
+            <div class="role-meta">
+              <span>December 2021 – August 2024</span>
+              <span>Greater Bengaluru Area</span>
+            </div>
+            <ul>
+              <li>Contributed to Salesforce Data Cloud, a unified customer data platform integrating Salesforce and external sources.</li>
+              <li>Worked on the Marketing Activation Module for segmentation-driven, cross-channel engagement workflows.</li>
+              <li>Designed resilient pipelines for customer targeting, channel selection, and campaign outcome tracking.</li>
+              <li>Integrated activation with adtech and martech ecosystems including Meta, Google AdSense, Hulu, and Salesforce Marketing Cloud.</li>
+              <li>Built a communication capping framework with Apache Spark to enforce throttling and regulatory compliance in outbound messaging.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-badge badge-sap">SAP</div>
+            <div class="label">Enterprise Platforms</div>
+            <h3>Senior Developer & Business Process Consultant • SAP Labs India</h3>
+            <div class="role-meta">
+              <span>September 2017 – December 2021</span>
+              <span>Bengaluru, India</span>
+            </div>
+            <ul>
+              <li>Worked across SAP business networks as a full-stack developer and techno-functional consultant.</li>
+              <li>Focused on business processes for energy, natural resources, and utilities domains.</li>
+              <li>Combined deep technical delivery with business process understanding to support enterprise transformation.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-badge badge-accenture">A</div>
+            <div class="label">Foundations</div>
+            <h3>Senior Software Engineer • Accenture</h3>
+            <div class="role-meta">
+              <span>June 2010 – March 2017</span>
+              <span>Bangalore</span>
+            </div>
+            <ul>
+              <li>Built a strong engineering base as an SAP technical consultant specializing in ABAP, Fiori, and SAPUI5.</li>
+              <li>Established the foundation for later platform architecture, full-stack delivery, and large-enterprise systems work.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="certifications">
+        <div class="section-head reveal">
+          <div>
+            <h2>Certifications & recognition</h2>
+            <p>
+              A premium portfolio should also show credibility signals — these help reinforce both breadth and execution depth.
+            </p>
+          </div>
+        </div>
+        <div class="cert-grid">
+          <article class="cert-card reveal">
+            <div class="label">Certifications</div>
+            <h3>SAP Certified Associate — Design Thinking</h3>
+            <p>Alongside SAP certifications in Fiori Application Development, SAP Cloud Platform Integration, ABAP with NetWeaver 7.50, and Data Intelligence Black Belt.</p>
+          </article>
+          <article class="cert-card reveal">
+            <div class="label">Recognition</div>
+            <h3>SAP TechEd Speaker</h3>
+            <p>Public speaking recognition that strengthens the profile as both a technical builder and a communicator of complex engineering ideas.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="section-head reveal">
+          <div>
+            <h2>Contact</h2>
+            <p>
+              Simple, premium, and direct — ideal for a GitHub Pages portfolio landing page.
+            </p>
+          </div>
+        </div>
+        <div class="contact-grid">
+          <article class="contact-card reveal">
+            <div class="label">LinkedIn</div>
+            <h3><a href="https://www.linkedin.com/in/shyamkumarc" target="_blank" rel="noreferrer">linkedin.com/in/shyamkumarc</a></h3>
+            <p>Use this portfolio as the premium visual layer on top of the profile.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      Built as an SEO-ready GitHub Pages portfolio with semantic structure, social preview metadata, structured data, and a dedicated profile photo section.
+    </footer>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+
+      document.querySelectorAll('.reveal').forEach((node) => observer.observe(node));
+    </script>
+  </body>
+</html>
